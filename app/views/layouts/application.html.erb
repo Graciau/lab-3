@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyApp</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><b>Y app</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+
+
+</body>
+<footer class="footer mt-auto py-3 bg-light">
+<div class="container">
+  <span class="text-muted">Copyright &copy; 2024 Y </span>
+  <ul class="list-inline float-right">
+    <li class="list-inline-item"><a href="#">Facebook</a></li>
+    <li class="list-inline-item"><a href="#">Twitter</a></li>
+    <li class="list-inline-item"><a href="#">Instagram</a></li>
+    </ul>
+    </div>
+</footer>
+
+</html>
+
